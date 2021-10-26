@@ -1,1 +1,2 @@
 Segundo arquivo da aula
+Nesse arquivo a gente vai criar um puta conflito, quem foi primeiro: a galinha ou o ovo? 
