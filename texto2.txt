@@ -1,2 +1,6 @@
 Segundo arquivo da aula
+<<<<<<< HEAD
 Nesse arquivo a gente vai criar um puta conflito, quem foi primeiro: a galinha ou o ovo? 
+=======
+Essa linha é minha, hahahahahah!
+>>>>>>> 5b16acbda14c1b943b666f7941aae2e90fe74bd6
