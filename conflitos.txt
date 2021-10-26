@@ -1,0 +1,160 @@
+------------------------USUARIO A---------------------------
+
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        IntrodInformatics/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD (master)
+$ touch texto1.txt
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD (master)
+$ cd IntrodInformatics/
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD/IntrodInformatics (main)
+$ touch texto.txt
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD/IntrodInformatics (main)
+$ touch texto2.txt
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD/IntrodInformatics (main)
+$ touch texto3.txt
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD/IntrodInformatics (main)
+$ git add .
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD/IntrodInformatics (main)
+$ git commit -m "Esses são os primeiros três arquivos da aula"
+[main eee9b0f] Esses são os primeiros três arquivos da aula
+ 3 files changed, 3 insertions(+)
+ create mode 100644 texto.txt
+ create mode 100644 texto2.txt
+ create mode 100644 texto3.txt
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD/IntrodInformatics (main)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/manueljpg/IntrodInformatics.git'
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD/IntrodInformatics (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD/IntrodInformatics (main)
+$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (5/5), 449 bytes | 89.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/manueljpg/IntrodInformatics.git
+   a50ba23..eee9b0f  main -> main
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD/IntrodInformatics (main)
+$ git add texto.txt
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD/IntrodInformatics (main)
+$ git commit -m "O primeiro arquivo contém algumas modificações"
+[main e646d32] O primeiro arquivo contém algumas modificações
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD/IntrodInformatics (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 389 bytes | 129.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/manueljpg/IntrodInformatics.git
+   eee9b0f..e646d32  main -> main
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD/IntrodInformatics (main)
+$ git pull
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 1), reused 8 (delta 1), pack-reused 0
+Unpacking objects: 100% (8/8), 737 bytes | 6.00 KiB/s, done.
+From https://github.com/manueljpg/IntrodInformatics
+   e646d32..2c2351b  main       -> origin/main
+Updating e646d32..2c2351b
+Fast-forward
+ texto_04.txt | 1 +
+ texto_05.txt | 1 +
+ texto_06.txt | 1 +
+ 3 files changed, 3 insertions(+)
+ create mode 100644 texto_04.txt
+ create mode 100644 texto_05.txt
+ create mode 100644 texto_06.txt
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD/IntrodInformatics (main)
+$ git push texto2.txt
+fatal: invalid gitfile format: texto2.txt
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD/IntrodInformatics (main)
+$ git add texto2.txt
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD/IntrodInformatics (main)
+$ git commit -m "eis aqui o conflito"
+[main 7a347dd] eis aqui o conflito
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD/IntrodInformatics (main)
+$ git push
+To https://github.com/manueljpg/IntrodInformatics.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/manueljpg/IntrodInformatics.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD/IntrodInformatics (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD/IntrodInformatics (main)
+$ git add texto2.txt
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD/IntrodInformatics (main)
+$ git commit -m "esse vai ser o conflito"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD/IntrodInformatics (main)
+$ git push
+To https://github.com/manueljpg/IntrodInformatics.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/manueljpg/IntrodInformatics.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+mjpg3@LAPTOP-81O2BN16 MINGW64 ~/Desktop/CTD/Introd Informática/ProjetoCTD/IntrodInformatics (main)
+$
